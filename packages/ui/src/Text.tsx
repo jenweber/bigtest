@@ -5,6 +5,7 @@ import { useFocus } from "./Focusable";
 interface TextProps {
   onEnter?: (text: string) => void
   bold?: boolean;
+  italic?: boolean;
 }
 
 export const Text: FC<TextProps> = ({ children, ...props }) => {
@@ -14,3 +15,4 @@ export const Text: FC<TextProps> = ({ children, ...props }) => {
     <InkText underline={isFocused} {...props}>{children}</InkText>
   );
 };
+

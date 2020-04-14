@@ -24,7 +24,6 @@ export const Home = () => {
         <Focusable onEnter={() => navigate('/run-test')}>
           <Text>Running Test</Text>
         </Focusable>
-        <RunTest />
       </Box>
     </Box>
   );
