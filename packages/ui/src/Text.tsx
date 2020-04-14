@@ -4,6 +4,7 @@ import { useFocus } from "./Focusable";
 
 interface TextProps {
   onEnter?: (text: string) => void
+  bold?: boolean;
 }
 
 export const Text: FC<TextProps> = ({ children, ...props }) => {

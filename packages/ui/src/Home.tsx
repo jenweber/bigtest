@@ -2,10 +2,11 @@ import { Box, useStdout } from "ink";
 import React from "react";
 import { Focusable } from "./Focusable";
 import { Text } from './Text';
+import { RunTest } from './RunTest';
 import {
-    // @ts-ignore
-    useNavigate
-  } from "react-router-dom";
+  // @ts-ignore
+  useNavigate
+} from "react-router-dom";
 
 export const Home = () => {
   const {
@@ -14,7 +15,7 @@ export const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <Box height={rows} width={columns}>
+    <Box height={rows - 1} width={columns}>
       <Box flexDirection="column">
         <Text>Experiments</Text>
         <Focusable onEnter={() => navigate('/list-detail')}>
@@ -23,6 +24,7 @@ export const Home = () => {
         <Focusable onEnter={() => navigate('/run-test')}>
           <Text>Running Test</Text>
         </Focusable>
+        <RunTest />
       </Box>
     </Box>
   );
