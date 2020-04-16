@@ -13,6 +13,12 @@ import { BTTT } from './BTTT';
       error
     TC = Tab Count
 
+⊕
+⦿
+⊗
+◉
+∅
+
   ICONS
     assertions
       ✔ successful assertions
@@ -20,8 +26,12 @@ import { BTTT } from './BTTT';
       - assertions that did not run
     steps
       ● step that ran
-      ✋ faied gua (on the guard, not error)
+      ✋faied guard (on the guard, not error)
       ○ step not ran
+      ⊗ step that failed
+      ✘
+      ▲
+
 
   MIN NOTES OH YEAH?
     - sidewards drift is inevitable i think
@@ -64,12 +74,16 @@ Sign in via Modal
           }
         }
   }
+
+  agenda
+    - when step's action fails (not guard)
+    - cli vs ci (info difference)
 */
 
 const Success = () => {
   return (
     <Box flexDirection="column">
-      <BTTT TT="title" TC={0}>Sign in via Modal <Color green>(Success)</Color></BTTT>
+      <BTTT TT="title" TC={0}>Sign in via Modal</BTTT>
       <BTTT TT="step+" TC={1}>create user Bob with password 12345678</BTTT>
       <BTTT TT="step+" TC={1}>visit home</BTTT>
       <BTTT TT="step+" TC={1}>click on sign in button</BTTT>
@@ -90,7 +104,7 @@ const Success = () => {
 const SuccessVerbose = () => {
   return (
     <Box flexDirection="column" paddingTop={1}>
-      <BTTT TT="title" TC={0}>Sign in via Modal <Color green>(Success Verbose)</Color></BTTT>
+      <BTTT TT="title" TC={0}>Sign in via Modal {`\u25CF`}</BTTT>
       <BTTT TT="step+" TC={1}>create user Bob with password 12345678</BTTT>
       <BTTT TT="step+" TC={1}>visit home</BTTT>
       <BTTT TT="step+" TC={1}>click on sign in button</BTTT>
@@ -116,7 +130,7 @@ const SuccessVerbose = () => {
 const GuardFail = () => {
   return (
     <Box flexDirection="column" paddingTop={1} >
-      <BTTT TT="title" TC={0}>Sign in via Modal <Color red>(Guard Fail)</Color></BTTT>
+      <BTTT TT="title" TC={0}>Sign in via Modal</BTTT>
       <BTTT TT="step+" TC={1}>create user Bob with password 12345678</BTTT>
       <BTTT TT="step+" TC={1}>visit home</BTTT>
       <BTTT TT="stepw" TC={1}>click on sign in button</BTTT>
@@ -139,7 +153,7 @@ const GuardFail = () => {
 const AssertFail = () => {
   return (
     <Box flexDirection="column" paddingTop={1}>
-      <BTTT TT="title" TC={0}>Sign in via Modal <Color red>(Assert Fail)</Color></BTTT>
+      <BTTT TT="title" TC={0}>Sign in via Modal</BTTT>
       <BTTT TT="step+" TC={1}>create user Bob with password 12345678</BTTT>
       <BTTT TT="step+" TC={1}>visit home</BTTT>
       <BTTT TT="step+" TC={1}>click on sign in button</BTTT>
