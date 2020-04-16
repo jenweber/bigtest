@@ -27,6 +27,36 @@ export const BTTT: FC<BTTTProp> = ({ TT, TC, children }) => {
           </Text>
         </Box>
       )
+    case "guar": {
+      switch (TTS) {
+        case "+":
+          return (
+            <Box>
+              <Text>
+                {tabs}
+                <Color green>
+                  ●
+                </Color> <Text italic><Color white>
+                  {children}
+                </Color></Text>
+              </Text>
+            </Box>
+          );
+        case "x":
+          return (
+            <Box>
+              <Text>
+                {tabs}
+                <Color red>
+                  ✕ {children}
+                </Color>
+              </Text>
+            </Box>
+          );
+        default:
+          return;
+      }
+    }
     case "step":
       switch (TTS) {
         case "+":
@@ -34,8 +64,8 @@ export const BTTT: FC<BTTTProp> = ({ TT, TC, children }) => {
             <Box>
               <Text>
                 {tabs}
-                <Color white>
-                  ● {children}
+                <Color green>
+                  ● </Color><Color white>{children}
                 </Color>
               </Text>
             </Box>
@@ -43,10 +73,10 @@ export const BTTT: FC<BTTTProp> = ({ TT, TC, children }) => {
         case "x":
           return (
             <Box>
-              <Text bold>
+              <Text>
                 {tabs}
                 <Color red>
-                  ✕ {children}
+                  ▲ {children}
                 </Color>
               </Text>
             </Box>
@@ -59,19 +89,6 @@ export const BTTT: FC<BTTTProp> = ({ TT, TC, children }) => {
                 <Color grey>
                   ○ {children}
                 </Color>
-              </Text>
-            </Box>
-          );
-        case "v":
-          return (
-            <Box>
-              <Text>
-                {tabs}
-                <Color green>
-                  ●
-                </Color> <Text italic><Color white>
-                  {children}
-                </Color></Text>
               </Text>
             </Box>
           );
@@ -107,7 +124,7 @@ export const BTTT: FC<BTTTProp> = ({ TT, TC, children }) => {
         case "x":
           return (
             <Box>
-              <Text bold>
+              <Text>
                 {tabs}
                 <Color red>
                   ✕ {children}
@@ -132,7 +149,7 @@ export const BTTT: FC<BTTTProp> = ({ TT, TC, children }) => {
     case "erro":
       return (
         <Box paddingY={1}>
-          <Text bold>
+          <Text>
             {tabs}
             <Color red>
               Error: {children}
