@@ -15,7 +15,6 @@
   ],
   "scripts": {
     "lint": "eslint \"{src,test}/**/*.ts\"",
-    "mocha": "mocha -r ts-node/register",
     "test:unit": "mocha -r ts-node/register \"test/**/*.test.ts\"",
     "test:types": "dtslint types --localTs ../../node_modules/typescript/lib --expectOnly",
     "test": "yarn test:unit && yarn test:types",
@@ -25,6 +24,7 @@
     "@bigtest/globals": "^0.7.2",
     "@bigtest/performance": "^0.5.0",
     "change-case": "^4.1.1",
+    "cypress": "^5.6.0",
     "element-is-visible": "^1.0.0",
     "lodash.isequal": "^4.5.0"
   },
@@ -35,7 +35,6 @@
     "@types/lodash.isequal": "^4.5.5",
     "@types/mocha": "^7.0.1",
     "@types/node": "^13.13.4",
-    "cypress": "^5.6.0",
     "dtslint": "^3.5.2",
     "expect": "^24.9.0",
     "express": "^4.17.1",
