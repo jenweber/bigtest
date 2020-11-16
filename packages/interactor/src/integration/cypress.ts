@@ -13,14 +13,18 @@ function interact(
     Cypress.log({
       displayName: runnerState,
       message: interaction.description
-    })
+    });
   })
 }
 
 Cypress.Commands.add('do', (
   interaction: Interaction<void>
 ) => {
-  interact(interaction, 'step');
+  if(Array.isArray(interaction)){
+    interaction.map(interaction => interact(interaction, 'step'));
+  } else {
+    interact(interaction, 'step');
+  }
 });
 
 Cypress.Commands.add('expect', (
@@ -29,6 +33,6 @@ Cypress.Commands.add('expect', (
   if(Array.isArray(interaction)){
     interaction.map(interaction => interact(interaction, 'assertion'));
   } else {
-    interact(interaction, 'assertion')
+    interact(interaction, 'assertion');
   }
 });
