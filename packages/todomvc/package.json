@@ -1,6 +1,6 @@
 {
   "name": "@bigtest/todomvc",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "Quickly run Todo MVC apps from different frameworks",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

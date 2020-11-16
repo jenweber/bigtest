@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.20.0
+
+### Minor Changes
+
+- 3bf116f8: pass the whole service slice of options and status into the service
+- 6bfcb3ae: refactor manifest-generator to service and remove MailBox
+- 6af43e28: refactor ProxyServer to Service
+
+### Patch Changes
+
+- 7a39af49: add cross-env and a test:debug yarn script to @bigtest/server
+- Updated dependencies [33a64ac0]
+- Updated dependencies [dd0ae975]
+- Updated dependencies [6af43e28]
+  - @bigtest/suite@0.11.1
+  - @bigtest/webdriver@0.6.5
+  - @bigtest/project@0.13.0
+  - @bigtest/bundler@0.11.1
+
 ## 0.19.0
 
 ### Minor Changes

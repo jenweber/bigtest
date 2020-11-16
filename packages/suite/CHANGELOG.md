@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.11.1
+
+### Patch Changes
+
+- 33a64ac0: Enforce order ot steps, assertion and children in DSL
+
 ## 0.11.0
 
 ### Minor Changes

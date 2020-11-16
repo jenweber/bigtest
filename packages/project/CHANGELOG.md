@@ -1,5 +1,11 @@
 # @bigtest/project
 
+## 0.13.0
+
+### Minor Changes
+
+- 6af43e28: refactor ProxyServer to Service
+
 ## 0.12.0
 
 ### Minor Changes

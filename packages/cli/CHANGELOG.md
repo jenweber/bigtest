@@ -1,5 +1,22 @@
 # @bigtest/cli
 
+## 0.16.0
+
+### Minor Changes
+
+- 3bf116f8: pass the whole service slice of options and status into the service
+
+### Patch Changes
+
+- d7a1ee72: check bin scripts under source control. This simplifies build scripts and makes building in windows simpler
+- 2914cdcb: Change the default suggested app port to 3000 in bigtest init
+- Updated dependencies [7a39af49]
+- Updated dependencies [3bf116f8]
+- Updated dependencies [6bfcb3ae]
+- Updated dependencies [6af43e28]
+  - @bigtest/server@0.20.0
+  - @bigtest/project@0.13.0
+
 ## 0.15.2
 
 ### Patch Changes

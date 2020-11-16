@@ -1,5 +1,11 @@
 # @bigtest/todomvc
 
+## 0.5.6
+
+### Patch Changes
+
+- d7a1ee72: check bin scripts under source control. This simplifies build scripts and makes building in windows simpler
+
 ## 0.5.5
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @bigtest/webdriver
 
+## 0.6.5
+
+### Patch Changes
+
+- dd0ae975: Modify post function to include content-type to satisfy geckodriver
+
 ## 0.6.4
 
 ### Patch Changes

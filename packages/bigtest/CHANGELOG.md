@@ -1,5 +1,19 @@
 # bigtest
 
+## 0.5.1
+
+### Patch Changes
+
+- 33a64ac0: Enforce order ot steps, assertion and children in DSL
+- de93ed83: Change default suggested app port to 3000
+- dd0ae975: Modify post function in webdriver for firefox
+- Updated dependencies [33a64ac0]
+- Updated dependencies [d7a1ee72]
+- Updated dependencies [3bf116f8]
+- Updated dependencies [2914cdcb]
+  - @bigtest/suite@0.11.1
+  - @bigtest/cli@0.16.0
+
 ## 0.5.0
 
 ### Minor Changes
